@@ -1,5 +1,4 @@
 # author: https://github.com/kagaya25/How-to-Send-Emails-Using-Python---Plain-Text
-
 import smtplib
 import ssl
 import sys
@@ -12,7 +11,7 @@ def Sendmail():
 	context = ssl.create_default_context()    # creates secure SSl context
 	#   subject have to be in the first line after '/' sign
 	message = '''\
-	subscribe to my channel and like . 
+	subscribe to my channel and like .
 	'''
 	receiver = input("Enter your Send to : ")
 	try:
@@ -31,5 +30,7 @@ def Sendmail():
 	    server.quit()
 '''
 Note:
-You have to allow less secure apps on chrome, otherwise Google will block your attempt to send an e-mail: myaccouns.google.com/lesssecureapps
+You have to allow less secure apps on chrome, 
+https://myaccount.google.com/lesssecureapps
 '''
+Sendmail()
